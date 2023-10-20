@@ -13,5 +13,9 @@ public class Main {
         market.update();
         market.acceptToMarket(human3);
         market.update();
+
+        while (!market.queueEmpty()){
+            market.update();
+        }
     }
 }

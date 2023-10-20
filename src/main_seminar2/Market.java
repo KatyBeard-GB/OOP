@@ -92,12 +92,16 @@ public class Market implements IMarketBehavior, IQueueBehaviour{
         }
     }
 
-    public void getQueue(){
+    private void getQueue(){
         List<String> result = new ArrayList<>();
         for (Actor actor :
                 queue) {
             result.add(actor.getName());
         }
         System.out.println("Очередь: " + result.toString());
+    }
+
+    public boolean queueEmpty(){
+        return queue.isEmpty();
     }
 }
