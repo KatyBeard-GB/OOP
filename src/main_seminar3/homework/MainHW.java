@@ -12,6 +12,7 @@ public class MainHW {
     static String[] name = {"Test1", "Test2", "Test3", "Test4",
                 "Test5", "Test6", "Test7", "Test8"};
     static Teacher[] teachers;
+    static int idStudent = 0, idStudentGroup = 0;
 
     public static void main(String[] args) {
         Teacher teacher1 = new Teacher("teacher1", "teacher1",
@@ -59,7 +60,7 @@ public class MainHW {
         Random random = new Random();
         for (int i = 0; i < countStudentGroup; i++) {
             StudentGroup studentGroup = new StudentGroup(randomStudentGroup(random.nextInt(1, 10)),
-                    teachers[random.nextInt(0, teachers.length)], i + 1);
+                    teachers[random.nextInt(0, teachers.length)], ++idStudentGroup);
             result.add(studentGroup);
         }
         return result;
@@ -71,7 +72,7 @@ public class MainHW {
         for (int i = 0; i < countStudent; i++) {
             Student student = new Student(name[random.nextInt(0, name.length)],
                     name[random.nextInt(0, name.length)],
-                    name[random.nextInt(0, name.length)], i + 1);
+                    name[random.nextInt(0, name.length)], ++idStudent);
             result.add(student);
         }
         return result;
