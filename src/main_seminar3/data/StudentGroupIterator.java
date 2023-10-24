@@ -1,4 +1,7 @@
-package main_seminar3;
+package main_seminar3.data;
+
+import main_seminar3.data.Student;
+import main_seminar3.data.StudentGroup;
 
 import java.util.Iterator;
 import java.util.List;

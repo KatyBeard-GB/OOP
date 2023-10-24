@@ -1,4 +1,4 @@
-package main_seminar3;
+package main_seminar3.data;
 
 import java.util.Iterator;
 import java.util.List;
@@ -39,7 +39,7 @@ public class StudentGroup implements Iterable<Student>{
     public String toString() {
         return "StudentGroup{" +
                 "numberOfStudents=" + studentList.size() +
-                ", " + teacher +
+                ", teacherId=" + teacher.getTeacherId() +
                 ", studentGroupId=" + studentGroupId +
                 '}';
     }

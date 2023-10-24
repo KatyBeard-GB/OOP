@@ -1,4 +1,4 @@
-package main_seminar3;
+package main_seminar3.data;
 
 public class Student extends User implements Comparable<Student>{
     private int studentId;

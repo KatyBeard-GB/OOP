@@ -1,6 +1,6 @@
 package main_seminar3.homework;
 
-import main_seminar3.StudentGroup;
+import main_seminar3.data.StudentGroup;
 
 import java.util.Iterator;
 import java.util.List;

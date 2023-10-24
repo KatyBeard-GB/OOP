@@ -1,8 +1,8 @@
 package main_seminar3.homework;
 
-import main_seminar3.Student;
-import main_seminar3.StudentGroup;
-import main_seminar3.Teacher;
+import main_seminar3.data.Student;
+import main_seminar3.data.StudentGroup;
+import main_seminar3.data.Teacher;
 
 import java.util.ArrayList;
 import java.util.List;

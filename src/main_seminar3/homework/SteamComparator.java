@@ -1,7 +1,5 @@
 package main_seminar3.homework;
 
-import main_seminar3.StudentGroup;
-
 import java.util.Comparator;
 
 public class SteamComparator implements Comparator<Stream> {
